@@ -18,7 +18,7 @@ import React from 'react';
  * @param renderFactory loading 工厂函数
  * @param config react-query 和 redux action 配置
  */
-export const connectReduxPageWithApi = <S, TApiResult = unknown>(
+export const connectReduxWithQuery = <S, TApiResult = unknown>(
   queryFn: (state: S) => QueryKey,
   apiFn: QueryFunction<TApiResult>,
   selector: (state: S, data: TApiResult) => any,
